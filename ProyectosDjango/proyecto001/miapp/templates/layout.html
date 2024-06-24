@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+    </title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        </title>
+    </head>
+    <body>
+        <h1> Proyecto Web (LP3) | Flor Cerdán </h1>
+        <hr/>
+        <ul>
+            <li>
+                <a href="/inicio"> Inicio</a>
+            </li>
+            <li>
+                <a href="/saludo"> Mensaje de saludo</a>
+            </li>
+                 
+            <li>
+                <a href="/rango"> Mostrar numeros [a,b]</a>
+            </li>
+        
+            <li>
+                <a href="/rango2/10/15"> Mostrar numeros [10,15]</a>
+            </li>
+        </ul>
+
+        <div id="content">
+            {% block content %}
+                <strong> Contenido en layout (Padre)</strong>
+            {% endblock %}
+        </div>
+        <footer>
+            UNTELS - Lenguaje de Programación III &copy; Flor Cerdán
+        </footer>
+    </body>
+</html>
